@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500&display=swap');
 /* Global Styles */
 /* 
      dark-green - #3c8453
@@ -24,9 +25,17 @@ html,body{
     max-width:900px;
 }
 
+/* Apply Poppins as default */
 body{
     background-color: #f6f6f6;
+    font-family: 'Poppins', sans-serif;
 }
+
+/* Apply Montserrat only to h1 and h2 in header */
+header h1, header h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 a{
     color:#3c8453;
 }
