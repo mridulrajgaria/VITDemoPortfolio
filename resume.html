@@ -6,40 +6,44 @@
     <title>Resume | Mridul Rajgaria | Aspiring Data Scientist</title>
     <link rel="icon" type="image/x-icon" href="images/cv.png" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="resume">
     <a class="btn download-link" href="Mridul_Rajgaria_Resume.pdf">Download PDF</a>
 
-    <div class="content-wrapper">
-      <header>
-        <div>
-          <h1>MRIDUL RAJGARIA</h1>
-          <h2>Aspiring Developer | Full-Stack, Data Science & ML Enthusiast</h2>
-          <br/>
-        </div>
-      </header>
+    <header>
+      <div class="content-wrapper">
+        <h1>MRIDUL RAJGARIA</h1>
+        <h3>Aspiring Developer | Full-Stack, Data Science & ML Enthusiast</h3>
+      </div>
+    </header>
 
-      <main>
-        <!-- PROFILE -->
-        <section class="resume-section">
-          <h2>Profile</h2>
-          <p>
-            I am a B.Tech Computer Science student at VIT Bhopal, with a strong foundation in data science, machine learning, and web development.
-            I have published research, built impactful projects in healthcare and cybersecurity, and enjoy combining my technical knowledge with creative solutions.
-          </p>
-          <a href="index.html">Back to homepage</a>
-        </section>
+    <main class="content-wrapper">
+      <!-- PROFILE -->
+      <section class="resume-section">
+        <h2>Profile</h2>
+        <p>
+          I am a B.Tech Computer Science student at VIT Bhopal, with a strong foundation in data science, machine learning, and web development.
+          I have published research, built impactful projects in healthcare and cybersecurity, and enjoy combining my technical knowledge with creative solutions.
+        </p>
+        <a href="index.html">Back to homepage</a>
+      </section>
 
-        <!-- PROJECTS -->
-        <section class="resume-section">
-          <h2>Projects</h2>
-
+      <!-- PROJECTS -->
+      <section class="resume-section">
+        <h2>Projects</h2>
+        <div class="project-wrapper">
           <section class="project-item">
             <img src="images/project-brain-tumor.jpg" alt="Brain Tumor Detection System" />
             <h3>Brain Tumor Detection System</h3>
             <p>
-              Built a comprehensive medical image classification system using a custom ResNet architecture to detect and classify brain tumors from MRI scans. The model was trained on annotated datasets with high precision, achieving improved classification accuracy through data augmentation and fine-tuning techniques. To enhance usability, the system was integrated with a conversational chatbot using the Gemini API, allowing patients or medical staff to interact with the system via natural language queries. This combination of AI-driven diagnostics and an accessible interface demonstrates the potential for real-world clinical deployment and early detection support.
+              Built a comprehensive medical image classification system using a custom ResNet architecture to detect and classify brain tumors from MRI scans.
+              The system incorporates data augmentation, fine-tuning, and real-world clinical datasets.
+              Integrated with a conversational chatbot using Gemini API, allowing natural language queries for improved user interaction.
             </p>
           </section>
 
@@ -47,7 +51,9 @@
             <img src="images/project-spartanplays.jpg" alt="SpartanPlays Cybersecurity Quiz" />
             <h3>SpartanPlays – Cyber Security Awareness Quiz</h3>
             <p>
-              Developed an interactive, gamified quiz platform targeting cybersecurity awareness in underrepresented and rural areas. The platform was designed with accessibility in mind, featuring a clean UI, local language support, and mobile-first responsiveness. Topics included phishing, password safety, online privacy, and social engineering. Conducted offline awareness campaigns in collaboration with local authorities, where the quiz was accessed via QR codes. The initiative led to a 40% increase in participant engagement and reduced misconceptions about basic digital threats by 30%, as measured through post-event surveys.
+              Developed an interactive, gamified cybersecurity quiz focused on rural awareness.
+              Features included QR code access, mobile-first UI, and multilingual support.
+              The project increased engagement by 40% and reduced digital threats through active community outreach.
             </p>
           </section>
 
@@ -55,97 +61,120 @@
             <img src="images/project-covid-nlp.jpg" alt="COVID Sentiment Insights" />
             <h3>COVID Sentiment Insights</h3>
             <p>
-              Conducted large-scale sentiment analysis on Twitter data during the COVID-19 pandemic using advanced NLP pipelines. Employed transformer-based models like BERT and RoBERTa fine-tuned for emotion classification, enabling accurate recognition of fear, hope, skepticism, and frustration in public discourse. The system achieved 85% accuracy in multi-label sentiment prediction. Results were visualized through dynamic dashboards to highlight public sentiment trends over time and geography. This project provides valuable insights for policymakers and public health officials to understand and respond to community concerns in real-time.
+              Analyzed public sentiment from tweets using BERT and RoBERTa models during the COVID-19 pandemic.
+              Achieved 85% classification accuracy for emotional tone mapping and generated real-time sentiment dashboards for policymakers.
             </p>
           </section>
-        </section>
+        </div>
+      </section>
 
-        <!-- WORK EXPERIENCE -->
-        <section class="resume-section">
-          <h2>Work & Research Experience</h2>
+      <!-- WORK EXPERIENCE -->
+      <section class="resume-section">
+  <h2>Work & Research Experience</h2>
 
-          <section>
-            <h3>Research Paper Publication</h3>
-            <p>May 2024 – August 2024</p>
-            <p>
-              Published “Cutting-Edge Image Recognition Leveraging Deep Learning and Machine Learning” in Journal of The Institution of Engineers (India): Series B.
-              Achieved 30% accuracy boost in image classification using practical DL approaches.
-            </p>
-          </section>
-
-          <section>
-            <h3>Health Hackathon – Johns Hopkins & VIT Bhopal</h3>
-            <p>Jan 2025 – Feb 2025</p>
-            <p>
-              Designed and pitched a brain tumor detection system using ResNet and ML optimization.
-              Received strong feedback for its real-world applicability.
-            </p>
-          </section>
-        </section>
-
-        <!-- EDUCATION -->
-        <section class="resume-section">
-          <h2>Education</h2>
-
-          <section>
-            <h3>VIT Bhopal University</h3>
-            <p>B.Tech in Computer Science and Engineering (2023–2027)</p>
-            <p>CGPA: 8.9</p>
-          </section>
-
-          <section>
-            <h3>D.A.V. Public School, Jharkhand</h3>
-            <p>Class XII – 92%</p>
-          </section>
-
-          <section>
-            <h3>St. Francis School, Jharkhand</h3>
-            <p>Class X – 98%</p>
-          </section>
-        </section>
-
-        <!-- TECHNICAL SKILLS -->
-        <section class="resume-section">
-          <h2>Technical Skills</h2>
-          <ul>
-            <li>Languages: Python, C++, Java, JavaScript, HTML, CSS</li>
-            <li>Frameworks: React.js, Node.js, Express.js</li>
-            <li>Libraries: NumPy, Deep Learning, Machine Learning</li>
-            <li>Databases: MySQL</li>
-            <li>Tools: Git, GitHub, Postman, VS Code</li>
-          </ul>
-        </section>
-
-        <!-- CERTIFICATIONS -->
-        <section class="resume-section">
-          <h2>Certifications</h2>
-          <ul>
-            <li>NPTEL – Introduction to Machine Learning (May 2025)</li>
-            <li>Coursera – The Bits and Bytes of Computer Networking (Oct 2024)</li>
-            <li>Cognitive Class – Data Science Tools (Sep 2024)</li>
-            <li>VITyarthi – Programming in Java (Apr 2025)</li>
-            <li>VITyarthi – Python Essentials (May 2023)</li>
-          </ul>
-        </section>
-
-        <!-- EXTRACURRICULARS -->
-        <section class="resume-section">
-          <h2>Extracurriculars</h2>
-          <ul>
-            <li>Content Team Member – Entrepreneurship Cell, VIT Bhopal</li>
-            <li>Hostel Committee Member – VIT Bhopal</li>
-          </ul>
-        </section>
-      </main>
+  <section class="work-item">
+    <div class="work-details">
+      <h3>Research Paper Publication</h3>
+      <p>Journal of The Institution of Engineers (India)</p>
+      <p>May 2024 – August 2024</p>
     </div>
+    <div class="work-summary">
+      <p>
+        Published “Cutting-Edge Image Recognition Leveraging Deep Learning and Machine Learning”.
+        Achieved 30% accuracy boost in image classification using practical DL approaches, showcasing
+        improvements over baseline CNN architectures through data optimization and preprocessing.
+      </p>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
+  <section class="work-item">
+    <div class="work-details">
+      <h3>Health Hackathon</h3>
+      <p>Johns Hopkins & VIT Bhopal</p>
+      <p>Jan 2025 – Feb 2025</p>
+    </div>
+    <div class="work-summary">
+      <p>
+        Designed and presented a brain tumor detection system using a customized ResNet model.
+        Proposed real-world deployment strategy in collaboration with clinical mentors. The system integrated
+        deep learning with a user-friendly chatbot interface for diagnostics and patient interaction.
+      </p>
+    </div>
+  </section>
+</section>
+
+      <!-- EDUCATION -->
+      <section class="resume-section">
+        <h2>Education</h2>
+
+        <section class="education-item">
+          <h3>VIT Bhopal University</h3>
+          <p>B.Tech in Computer Science and Engineering (2023–2027)</p>
+          <p>CGPA: 8.9</p>
+        </section>
+
+        <section class="education-item">
+          <h3>D.A.V. Public School, Jharkhand</h3>
+          <p>Class XII – 92%</p>
+        </section>
+
+        <section class="education-item">
+          <h3>St. Francis School, Jharkhand</h3>
+          <p>Class X – 98%</p>
+        </section>
+      </section>
+
+      <!-- TECHNICAL SKILLS -->
+      <section class="resume-section">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>Languages: Python, C++, Java, JavaScript, HTML, CSS</li>
+          <li>Frameworks: React.js, Node.js, Express.js</li>
+          <li>Libraries: NumPy, Deep Learning, Machine Learning</li>
+          <li>Databases: MySQL</li>
+          <li>Tools: Git, GitHub, Postman, VS Code</li>
+        </ul>
+      </section>
+
+      <!-- CERTIFICATIONS -->
+      <section class="resume-section">
+  <h2>Certifications</h2>
+  <ul>
+    <li>
+      NPTEL – Introduction to Machine Learning (May 2025)
+      <a href="https://drive.google.com/file/d/1kHtSUQZGQvV_arVFcceCxblrhHkzY9qG/view?usp=drive_link" target="_blank">[View Certificate]</a>
+    </li>
+    <li>
+      Coursera – The Bits and Bytes of Computer Networking (Oct 2024)
+      <a href="https://www.coursera.org/account/accomplishments/verify/P1P1YRU2ZKPM" target="_blank">[View Certificate]</a>
+    </li>
+    <li>
+      Cognitive Class – Data Science Tools (Sep 2024)
+      <a href="https://courses.cognitiveclass.ai/certificates/6ccb8de2fe784e1a8a31ad61774f7290" target="_blank">[View Certificate]</a>
+    </li>
+    <li>
+      VITyarthi – Programming in Java (Apr 2025)
+      <a href="https://drive.google.com/file/d/1NP4GY49juWIjWFnAiLnnRlWe3O-3wksC/view?usp=drive_link" target="_blank">[View Certificate]</a>
+    </li>
+  </ul>
+</section>
+
+
+      <!-- EXTRACURRICULARS -->
+      <section class="resume-section">
+        <h2>Extracurriculars</h2>
+        <ul>
+          <li>Content Team Member – Entrepreneurship Cell, VIT Bhopal</li>
+          <li>Hostel Committee Member – VIT Bhopal</li>
+        </ul>
+      </section>
+    </main>
+
     <footer>
       <p>
         © 2025 by Mridul Rajgaria |
         <a href="mailto:iammridul222@gmail.com">iammridul222@gmail.com</a>
       </p>
-
       <ul class="socials">
         <li>
           <a href="https://www.linkedin.com/in/mridul-rajgaria-112257288/" target="_blank">

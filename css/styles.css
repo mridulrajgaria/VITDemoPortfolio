@@ -1,133 +1,223 @@
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500&display=swap');
-/* Global Styles */
-/* 
-     dark-green - #3c8453
-     sarly-beige - #bcaa96
-     dark grey - #222
-     light grey - #d3d4d6 
-     off-white - #f6f6f6
- */
 
-html{
-    box-sizing: border-box;
-    
+/* GLOBAL STYLES */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
-html,body{
-    height: 100%;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
-*,*::before,*::after{
-    box-sizing: inherit;
-    margin:0;
+html, body {
+  height: 100%;
 }
-
-.content-wrapper{
-    margin:0 auto;
-    max-width:900px;
+body {
+  background-color: #f6f6f6;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 0;
 }
-
-/* Apply Poppins as default */
-body{
-    background-color: #f6f6f6;
-    font-family: 'Poppins', sans-serif;
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin: 0;
 }
-
-/* Apply Montserrat only to h1 and h2 in header */
-header h1, header h2 {
-    font-family: 'Montserrat', sans-serif;
+h1 {
+  font-size: 7rem;
+  line-height: 0.85;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 2.4rem;
 }
 
-a{
-    color:#3c8453;
+/* Links */
+a {
+  color: #3c8453;
 }
-a:hover{
-    color:#bcaa96;
+a:hover {
+  color: #bcaa96;
+  text-decoration: none;
 }
-
-.btn{
-    background-color: #3c8453;
-    color:#f6f6f6;
-    text-decoration: none;
+footer a {
+  color: #bcaa96;
 }
-
-
-/* Index */
-.home{
-    background : url(../images/indexwall.jpg) no-repeat;
-    background-size: cover ;
-    display: flex;
-    flex-direction: column;
+footer a:hover {
+  color: #3c8453;
 }
-.home .content-wrapper{
-    margin: 0 auto;
-    padding: 30px;
-    flex: 1 0 auto;
-}
-.home .content-bg{
-    padding:30px;
-    background: rgba(255, 255, 255, 0.9 );
+.btn {
+  background: #3c8453;
+  color: #f6f6f6;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: 7px;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  border-radius: 4px;
 }
 
-/* Resume */
-.resume header::before{
-    background: url(../images/maxresdefault.jpg) center/cover;
-    content:"";
-    display: block;
-    height: 375px;
-}
-.resume-section{
-    margin-bottom:50px;
-}
-.resume-section h2{
-    border-bottom: 2px dashed #d3d4d6 ;
-}
-.download-link{
-    position:fixed;
-    top:5px;
-    left:5px;   
+/* Wrapper */
+.content-wrapper {
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 900px;
 }
 
-/* Profile */
-/* Projects */
-.project-item img{
-    float:left;
-    width:300px;
+/* HOME PAGE */
+.home {
+  background: url(../images/indexwall.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.home .content-wrapper {
+  flex: 1 0 auto;
+}
+.home .content-bg {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9);
+}
+@media screen and (max-width: 580px) {
+  .home .content-wrapper {
+    padding: 10px;
+  }
+  .content-bg {
+    padding: 20px;
+  }
+}
+
+/* RESUME HEADER IMAGE */
+.resume header::before {
+  background: url(../images/maxresdefault.jpg) center/cover;
+  content: "";
+  display: block;
+  height: 375px;
+}
+@media screen and (max-width: 580px) {
+  .resume header::before {
+    height: 200px;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+/* SECTIONS */
+.resume-section {
+  margin-bottom: 50px;
+}
+.resume-section h2 {
+  border-bottom: 2px dashed #d3d4d6;
+}
+.download-link {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 1200px) {
+  .download-link {
+    position: absolute;
+  }
+}
+
+/* PROJECTS */
+.project-item {
+  margin: 30px 0;
+}
+.project-item img {
+  width: 300px;
+}
+@media screen and (min-width: 860px) {
+  .project-item {
+    display: flow-root;
+  }
+  .project-item img {
+    float: left;
     margin-right: 20px;
+  }
 }
-.project-item{
-    display:flow-root;
-    margin-block:30px;
+@media screen and (min-width: 650px) and (max-width: 859px) {
+  .project-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+  .project-item img {
+    width: 100%;
+  }
 }
-/* Work Experience */
-/* Education */
-/* Footer */
-footer{
-    background-color: #222;
-    color: #d3d4d6;
-    display:flex;
+@media screen and (max-width: 500px) {
+  .project-item img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* WORK EXPERIENCE */
+.work-item {
+  margin: 30px 0;
+}
+.work-details p {
+  margin: 0;
+}
+@media screen and (min-width: 860px) {
+  .work-item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 20px;
+  }
+  .work-summary :first-child {
+    margin-top: 0;
+  }
+}
+
+/* EDUCATION */
+.education-item {
+  margin: 30px 0;
+}
+.education-item p {
+  margin: 0;
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: #d3d4d6;
+}
+@media screen and (min-width: 860px) {
+  footer {
+    display: flex;
     justify-content: space-between;
-    padding-inline: 20px;
+    padding: 0 20px;
+  }
 }
-
-footer a{
-    color:#bcaa96;;
+@media screen and (max-width: 859px) {
+  footer {
+    text-align: center;
+    padding: 10px;
+  }
 }
-footer a:hover{
-    color:#3c8453
+.socials {
+  list-style-type: none;
+  padding: 0;
 }
-
-.socials{
-    list-style-type:none;
-    padding: 0;
+.socials li {
+  display: inline-block;
+  margin-left: 10px;
 }
-
-.socials img{
-    width: 32px;
+.socials img {
+  width: 32px;
 }
-
-.socials li{
-    display: inline-block;
-    margin-left:10px;
-}
-.socials img:hover{
-    opacity: 50%;
+.socials img:hover {
+  opacity: 0.5;
 }
